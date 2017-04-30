@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BlueJeans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnR-gj-tdb">
+                                <rect key="frame" x="143.5" y="71" width="79" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="K7q-DS-yKx">
+                                <rect key="frame" x="146" y="379.5" width="83" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eru-I9-wJN">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="50"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eru-I9-wJN" firstAttribute="top" secondItem="K7q-DS-yKx" secondAttribute="top" id="H1T-4B-3zo"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qf3-SY-h1O">
+                                <rect key="frame" x="146" y="79" width="83" height="284"/>
+                                <state key="normal" title="Join Meeing"/>
+                                <connections>
+                                    <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="df5-FA-aO4"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rj4-QP-9zU">
+                                <rect key="frame" x="143" y="196" width="83" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qf3-SY-h1O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1FN-pb-3gl"/>
+                            <constraint firstItem="PnR-gj-tdb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-4.5" id="I5k-aX-Cde"/>
+                            <constraint firstItem="qf3-SY-h1O" firstAttribute="top" secondItem="PnR-gj-tdb" secondAttribute="bottom" constant="50" id="R9i-Qm-hek"/>
+                            <constraint firstItem="qf3-SY-h1O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Va4-AH-xQC"/>
+                            <constraint firstItem="K7q-DS-yKx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cY2-Xs-8jH"/>
+                            <constraint firstItem="PnR-gj-tdb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="lnv-9F-RQY"/>
+                            <constraint firstItem="qf3-SY-h1O" firstAttribute="top" secondItem="PnR-gj-tdb" secondAttribute="bottom" constant="100" id="tol-a9-V2c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Thelabel" destination="PnR-gj-tdb" id="AAS-MQ-22f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-41" y="127"/>
+        </scene>
+    </scenes>
+</document>
